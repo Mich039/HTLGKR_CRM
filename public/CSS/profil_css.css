@@ -1,3 +1,6 @@
+		body{
+			min-width:650px;
+		}
 		img{
 			width:32%;
 			max-height:250px;
@@ -15,23 +18,24 @@
 		}
 		#div_profile_data{
 			
-			width:-moz-calc(100% -250px);
-			width:calc(100% -250px);
-			width:-webkit-calc(100% -250px);
+			width:-moz-calc(100% - 260px);
+			width:calc(100% - 260px);
+			width:-webkit-calc(100% - 260px);
 			
 			
-			width:65%;
 			float:right;
 		}
 		.data_field_desc{
-			width:25%;
+			width:150px;
 			margin-top:0;
 			margin-bottom:0;
 			float:left;
 		}
-		.data_field{
+	.data_field{
 		float:right;
-			width:75%;
+		width:-moz-calc(100% - 150px);
+			width:calc(100% - 150px);
+			width:-webkit-calc(100% - 150px);
 			margin-top:0;
 			margin-bottom:0;
 		}
@@ -48,9 +52,9 @@
 			width:100%;
 		}
 		i{
-			position:absolute;
-			top:20px;
-			right:10px;
+			float:right;
+			margin-top:2px;
+			margin-right:4px;
 			color:#ffffff;
 		}
 	
