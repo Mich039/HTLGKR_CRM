@@ -1,0 +1,56 @@
+		img{
+			width:32%;
+			max-height:250px;
+			max-width:250px;
+			float:left;			
+		}
+		#h1_name{
+			margin:0;
+			background-color:#0064b0;
+			color:#ffffff;
+			border-radius:10px;
+			float:right;
+			text-align:left;
+			width:100%;			
+		}
+		#div_profile_data{
+			
+			width:-moz-calc(100% -250px);
+			width:calc(100% -250px);
+			width:-webkit-calc(100% -250px);
+			
+			
+			width:65%;
+			float:right;
+		}
+		.data_field_desc{
+			width:25%;
+			margin-top:0;
+			margin-bottom:0;
+			float:left;
+		}
+		.data_field{
+		float:right;
+			width:75%;
+			margin-top:0;
+			margin-bottom:0;
+		}
+		.field_group{
+			margin-top:0;
+			margin-bottom:0;
+			
+		}
+		.div_data_field{
+			border:solid;
+			border-width:1px;
+			border-color:#ccc;
+			height:20px;
+			width:100%;
+		}
+		i{
+			position:absolute;
+			top:20px;
+			right:10px;
+			color:#ffffff;
+		}
+	
