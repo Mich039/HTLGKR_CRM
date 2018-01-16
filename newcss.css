@@ -4,63 +4,69 @@ To change this template file, choose Tools | Templates
 and open the template in the editor.
 */
 /* 
-    Created on : 09.01.2018, 12:58:32
-    Author     : ozgeayar
+    Created on : 16.01.2018, 13:17:41
+    Author     : July
 */
 
-table, th , td {
-    border: 1px solid black; 
-    border-collapse: collapse;
-}
-#suchfeld {
-    width: 70%; 
-}
-input {
-   
- width: 250px;
-  height: 32px;
-
-  background: white;
-  border: 1px solid #000;
-  border-radius: 5px;
-  box-shadow: 0 0 3px #000, 0 10px 15px #ebebeb inset;
-}
-i{
+img{
     
-     position: relative;
-     color: black;
-     font-size: 25px;
+    position: absolute; 
+    left: 160px; 
+}
+.label1{
      
+    position: absolute; 
+    left: 245px; 
+    top: 220px;
+    font-family: merriweather; 
+    
+}
+.text1
+{
+   position: absolute; 
+   left: 245px; 
+   top:245px; 
+   border-left: 0px; 
+   border-right: 0px;
+   border-top: 0px;
+      width: 290px;
+    
+}
+.label2{
+    
+    
+    position:absolute; 
+    left:245px;
+    top:290px;
+    
+    
+}
+.text2{
+    position:absolute; 
+    left:245px;
+    top:315px;
+   
+    border-left: 0px; 
+   border-right: 0px;
+   border-top: 0px;
+   width: 290px;
+}
+.button1{
+    
+    position:absolute; 
+    left:330px;
+    top:400px;
+    width: 120px;
+    height:30px;
+    border-radius: 10px/15px;
+   color:white; 
+    font-size: 14px;
+    
+    
+    
+    
+  
+    
+    
 }
 
-@import url("//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css");
-body { margin: 30px; }
-.search {
-  position: relative;
-  color: black;
-  font-size: 25px;
-}
-
-.search input {
-  width: 250px;
-  height: 32px;
-
-  background: white;
-  border: 1px solid #000;
-  border-radius: 5px;
-  box-shadow: 0 0 3px #000, 0 10px 15px #ebebeb inset;
-}
-
-.search input { text-indent: 50px;}
-.search .fa-search { 
-  position: absolute;
-  top: 5px;
-  left: 10px;
-}
-
-
-.search-plus.fa-search-plus{
-  position: absolute;
-  top: 5px;
-  left: 10px;
-}
