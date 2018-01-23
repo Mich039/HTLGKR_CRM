@@ -1,6 +1,7 @@
 ﻿body {
     padding: 0;
     margin: 0;
+    min-width: 500px;
 }
 
 #top_nav {
@@ -11,9 +12,9 @@
 }
 
     #top_nav a:first-child {
-        width: unset;
+        width: 20%;
         line-height: inherit;
-        transition:0.5s;
+        transition: 0.5s;
     }
 
     #top_nav a:nth-child(even) {
@@ -38,7 +39,7 @@
 
 aside img {
     height: 50px;
-    margin: 10px;
+    margin: 5px 10px;
 }
 
 #main {
@@ -50,19 +51,35 @@ aside img {
 }
 
     #main div p {
-        margin: 0;
+        margin: 0px 0px 0px 10px;
     }
 
     #main div {
         height: 1000px;
-        padding-left: 10px;
+        width: 300%
     }
 
     #main aside {
         display: flex;
         flex-direction: column;
         background: lightgrey;
+        width: 20%;
+        transition: 0.5s;
+        max-width: 25%;
+        overflow-x: hidden;
+        align-items:center;
+        min-width:fit-content;
     }
+
+        #main aside a span {
+            display: none;
+            align-self:center;
+        }
+
+        #main aside a {
+            display: flex;
+            flex-direction: row;
+        }
 
 footer {
     background: darkgrey;
@@ -81,3 +98,9 @@ footer {
             padding: 0;
             margin: 0;
         }
+
+@media screen and (max-width:900px) {
+    a img {
+        width: 25px;
+    }
+}
