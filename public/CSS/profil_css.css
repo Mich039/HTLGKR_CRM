@@ -1,0 +1,60 @@
+		body{
+			min-width:650px;
+		}
+		img{
+			width:32%;
+			max-height:250px;
+			max-width:250px;
+			float:left;			
+		}
+		#h1_name{
+			margin:0;
+			background-color:#0064b0;
+			color:#ffffff;
+			border-radius:10px;
+			float:right;
+			text-align:left;
+			width:100%;			
+		}
+		#div_profile_data{
+			
+			width:-moz-calc(100% - 260px);
+			width:calc(100% - 260px);
+			width:-webkit-calc(100% - 260px);
+			
+			
+			float:right;
+		}
+		.data_field_desc{
+			width:150px;
+			margin-top:0;
+			margin-bottom:0;
+			float:left;
+		}
+	.data_field{
+		float:right;
+		width:-moz-calc(100% - 150px);
+			width:calc(100% - 150px);
+			width:-webkit-calc(100% - 150px);
+			margin-top:0;
+			margin-bottom:0;
+		}
+		.field_group{
+			margin-top:0;
+			margin-bottom:0;
+			
+		}
+		.div_data_field{
+			border:solid;
+			border-width:1px;
+			border-color:#ccc;
+			height:20px;
+			width:100%;
+		}
+		i{
+			float:right;
+			margin-top:2px;
+			margin-right:4px;
+			color:#ffffff;
+		}
+	
