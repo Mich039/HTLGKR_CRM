@@ -1,0 +1,69 @@
+#INPUTNameDerFirma {
+    width: 99%;
+}
+
+#INPUTStraﬂeFirma {
+    width: 80%;
+}
+
+#INPUTHausnummerFirma {
+    width: 18.5%
+}
+
+#INPUTPLZFirma {
+    width: 20%;
+}
+
+#INPUTStadtFirma {
+    width: 45%;
+}
+
+#INPUTLandFirma {
+    width: 33%;
+}
+
+select {
+    width: 99.5%
+}
+
+h2 {
+    width: 100%;
+    background-color: #0064b0;
+    color: white
+}
+
+#INPUTVorname {
+    width: 99%
+}
+
+#INPUTNachname {
+    width: 99%
+}
+
+#INPUTStraﬂePerson {
+    width: 80%;
+}
+
+#INPUTHausnummerPerson {
+    width: 18.5%;
+}
+
+#INPUTPLZPerson {
+    width: 20%;
+}
+
+#INPUTStadtPerson {
+    width: 45%;
+}
+
+#INPUTLandPerson {
+    width: 33%;
+}
+
+#INPUTGeburtsdatum {
+    width: 99%
+}
+
+#INPUTTelefonnr {
+    width: 99%
+}
