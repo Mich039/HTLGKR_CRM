@@ -5,31 +5,53 @@ To change this template file, choose Tools | Templates
 and open the template in the editor.
 -->
 <html>
-   
- 
- <head>
-  <link href="newcss.css" rel="stylesheet">
- 
- </head>
-
- <body>
- 	<img src="crmlogoandi.png" width="400" height="200" align="right"   >
- 	 <form>
-             
- 	 	<label class="label1" for="Benutzername">Benutzername: </label>
- 		<br>
-       
- 	 	<input class="text1" type="text" id="Benutzername" name="Benutzername" align="right">
-                <br><p></p>
- 	 	<label class ="label2" for="Passwort">Passwort: </label>
-                <br>
- 	 	<input class="text2" type="password" id="Passwort" name="Passwort">
- 	 	<br>
-                <p></p>
- 	 	
-                <button  class="button1" type="submit" style ="BACKGROUND-COLOR:#3399ff " >anmelden </button>
- 	 </form>
- 	
- </body>
- 
- </html> 
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="newcss.css">
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+      
+    
+    <body>
+        
+        
+        <div class="search">
+        <span class="fa fa-search"></span>
+        <input id="suchfeld" name="INPUTSuchfeld" placeholder="Suchbegriff eingeben" >
+        </div>
+        
+       <div class="searchplus" >
+            <span class="fa fa-search-plus"></span>
+            <button id="suchfeldplus" name="BUTTONuchfeldplus" ></button>
+       </div>
+        
+        <div class="filter ">
+            <span class="fa fa-filter"></span>
+            <button id="filterfeld" name="BUTTONfilterfeld" ></button>
+        </div>
+        
+        <br>
+        <br>
+        <table style="width:100%">
+            <tr>
+            <th>Vor- und Nachname</th>  
+            <th>Telefon 1</th>
+            <th>Telefon 2</th>
+            <th>Email </th>
+            <th>Adresse</th>
+            </tr>
+            
+            <tr>
+                <td align="center"> Max Mustermann </td>
+                <td align="center"> 209834789320234</td>
+                <td align="center"> 908094389038095</td>
+                <td align="center"> <a href="mailto:maxmustermann@gmail.com"> maxmustermann@gmail.com</a></td>
+                <td align="center"> Parzer Schulstraße 1 <br> 4710 Grieskirchen</td>
+                
+            </tr>
+        </table>
+               
+    </body>
+</html>
