@@ -7,21 +7,14 @@ and open the template in the editor.
     Created on : 09.01.2018, 12:58:32
     Author     : ozgeayar
 */
-
-
 table, th , td {
     border: 1px solid black; 
     border-collapse: collapse;
 }
 
-
-
-
-
-
-
-@import url("//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css");
-body { margin: 30px; }
+body {
+    margin: 30px; 
+}
 .search {
   position: relative;
   color: black;
@@ -37,26 +30,16 @@ body { margin: 30px; }
   border-radius: 5px;
   box-shadow: 0 0 3px #000, 0 10px 15px #ebebeb inset;
 }
-
-.search input { text-indent: 50px;}
-.search .fa-search { 
-  position: absolute;
-  top: 5px;
-  left: 10px;
-}
-
-
-
-
-
 .searchplus {
   position: relative;
   color: black;
   font-size: 25px;
 }
-
+button img{
+    width:20px
+}
 .searchplus button{
-  width: 3%;
+  width: fit-content;
   height: 36px;
   float: left;
   background: white;
@@ -64,7 +47,6 @@ body { margin: 30px; }
   border-radius: 5px;
   box-shadow: 0 0 3px #000, 0 10px 15px #ebebeb inset;
 }
-.searchplus button { text-indent: 50px;}
 .searchplus .fa-search-plus{ 
   position: absolute;
   top: 5px;
@@ -74,13 +56,13 @@ body { margin: 30px; }
 
 
 .filter {
-  position: relative;
-  color: black;
-  font-size: 25px;
+    position: relative;
+    color: black;
+    font-size: 25px;
 }
 
 .filter button {
-  width: 3%;
+  width: fit-content;
   height: 36px;
   float: left;
   
@@ -89,11 +71,8 @@ body { margin: 30px; }
   border-radius: 5px;
   box-shadow: 0 0 3px #000, 0 10px 15px #ebebeb inset;
 }
-.filter button { text-indent: 50px;}
 .filter .fa-filter { 
   position: absolute;
   top: 5px;
  left: 390px;
 }
-
-

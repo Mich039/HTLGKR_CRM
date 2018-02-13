@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ï»¿<!DOCTYPE html>
 <!--
 To change this license header, choose License Headers in Project Properties.
 To change this template file, choose Tools | Templates
@@ -6,34 +6,35 @@ and open the template in the editor.
 -->
 <html>
 <head>
-	<title>TODO supply a title</title>
+	<title>Kontakt hinzufÃ¼gen</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/newContact.css"
 </head>
 <body>
-	<h1>Firmenkontakt hinzufügen</h1>
-	<h2>Firmendaten</h2>
-	<input id="INPUTNameDerFirma" name="INPUTNameDerFirma" placeholder="Name der Firma"> <br />
-	<select>
+	<h1>Firmenkontakt hinzufÃ¼gen</h1>
+    <div id="contentWrapper">
+        <h2>Firmendaten</h2>
+        <input id="INPUTNameDerFirma" name="INPUTNameDerFirma" placeholder="Name der Firma">
+        <select>
+            <option value="OPTIONKlassenpate">Klassenpate</option>
+            <option value="OPTIONAussteller">Aussteller</option>
+            <option value="OPTIONInteressiert">Interessiert</option>
+        </select>
+        <input id="INPUTStrasseFirma" name="INPUTStrasseFirma" placeholder="Strasse">
+        <input id="INPUTHausnummerFirma" name="INPUTHausnummerFirma" placeholder="Hausnummer">
+        <input id="INPUTPLZFirma" name="INPUTPLZFirma" placeholder="PLZ">
+        <input id="INPUTStadtFirma" name="INPUTStadtFirma" placeholder="Stadt">
+        <input id="INPUTLandFirma" name="INPUTLandFirma" placeholder="Land">
 
-		<option value="OPTIONKlassenpate">Klassenpate</option>
-		<option value="OPTIONAussteller">Aussteller</option>
-		<option value="OPTIONInteressiert">Interessiert</option>
-	</select><br />
-	<input id="INPUTStraßeFirma" name="INPUTStraßeFirma" placeholder="Straße"><input id="INPUTHausnummerFirma" name="INPUTHausnummerFirma" placeholder="Hausnummer"><br />
-	<input id="INPUTPLZFirma" name="INPUTPLZFirma" placeholder="PLZ"><input id="INPUTStadtFirma" name="INPUTStadtFirma" placeholder="Stadt"><input id="INPUTLandFirma" name="INPUTLandFirma" placeholder="Land"> <br />
-
-	<h2>Kontaktdaten</h2>
-	<input id="INPUTVorname" name="INPUTVorname" placeholder="Vorname"> <br />
-	<input id="INPUTNachname" name="INPUTNachname" placeholder="Nachname"> <br />
-	<input id="INPUTGeburtsdatum" name="INPUTGeburtsdatum" placeholder="Geburtsdatum"> <br />
-	<input id="INPUTStraßePerson" name="INPUTStraßePerson" placeholder="Straße"><input id="INPUTHausnummerPerson" name="INPUTHausnummerPerson" placeholder="Hausnummer"><br />
-	<input id="INPUTPLZPerson" name="INPUTPLZPerson" placeholder="PLZ"><input id="INPUTStadtPerson" name="INPUTStadtPerson" placeholder="Stadt"><input id="INPUTLandPerson" name="INPUTLandPerson" placeholder="Land"> <br />
-	<input id="INPUTTelefonnr" name="INPUTTelefonnr" placeholder="Telefonnumer">
-
-
-
-
-
+        <h2>Kontaktdaten</h2>
+        <input id="INPUTVorname" name="INPUTVorname" placeholder="Vorname">
+        <input id="INPUTNachname" name="INPUTNachname" placeholder="Nachname">
+        <input id="INPUTGeburtsdatum" name="INPUTGeburtsdatum" placeholder="Geburtsdatum">
+        <input id="INPUTStrassePerson" name="INPUTStrassePerson" placeholder="Strasse"><input id="INPUTHausnummerPerson" name="INPUTHausnummerPerson" placeholder="Hausnummer">
+        <input id="INPUTPLZPerson" name="INPUTPLZPerson" placeholder="PLZ"><input id="INPUTStadtPerson" name="INPUTStadtPerson" placeholder="Stadt"><input id="INPUTLandPerson" name="INPUTLandPerson" placeholder="Land">
+        <input id="INPUTTelefonnr" name="INPUTTelefonnr" placeholder="Telefonnumer">
+        <button id="confirmBtn">BestÃ¤tigen</button>
+    </div>
 </body>
 </html>
