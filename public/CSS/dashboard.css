@@ -2,6 +2,7 @@
     padding: 0;
     margin: 0;
     min-width: 500px;
+    max-height:100%;
 }
 
 #top_nav {
@@ -54,11 +55,6 @@ aside img {
         margin: 0px 0px 0px 10px;
     }
 
-    #main div {
-        height: 1000px;
-        width: 300%
-    }
-
     #main aside {
         display: flex;
         flex-direction: column;
@@ -79,6 +75,10 @@ aside img {
         #main aside a {
             display: flex;
             flex-direction: row;
+        }
+        #content{
+            width:300%;
+            display:flex;
         }
 
 footer {
