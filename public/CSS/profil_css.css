@@ -20,7 +20,7 @@
 			
 			width:-moz-calc(100% - 260px);
 			width:calc(100% - 260px);
-			width:-webkit-calc(100% - 260px);
+			width: -webkit-calc(100% - 260px);
 			
 			
 			float:right;
