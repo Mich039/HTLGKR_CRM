@@ -7,52 +7,26 @@ and open the template in the editor.
     Created on : 16.01.2018, 13:17:41
     Author     : July
 */
-
-img {
-    position: absolute;
-    left: 160px;
+body {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    align-items: center;
+    flex-direction: column;
 }
 
-.label1 {
-    position: absolute;
-    left: 245px;
-    top: 220px;
-    font-family: merriweather;
+div#contentWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.text1 {
-    position: absolute;
-    left: 245px;
-    top: 245px;
-    border-left: 0px;
-    border-right: 0px;
-    border-top: 0px;
-    width: 290px;
+form {
+    width: fit-content;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
 }
-
-.label2 {
-    position: absolute;
-    left: 245px;
-    top: 290px;
-}
-
-.text2 {
-    position: absolute;
-    left: 245px;
-    top: 315px;
-    border-left: 0px;
-    border-right: 0px;
-    border-top: 0px;
-    width: 290px;
-}
-
-.button1 {
-    position: absolute;
-    left: 330px;
-    top: 400px;
-    width: 120px;
-    height: 30px;
-    border-radius: 10px/15px;
-    color: white;
-    font-size: 14px;
+label,input,button{
+    margin:5px;
 }

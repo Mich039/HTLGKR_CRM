@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Termin hinzufügen</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"><!--Responsive-->
+    </head>
+    <body>
+        <h2>Termin hinzufügen</h2>
+        <p>Titel<input type="text" /></p> <!--Input für eingegebenen Text-->
+        <p>Beginn<input type="text" />
+
+            <i style="font-size:24px" class="fa">&#xf073;</i> <!--  -->
+
+        <form id="gotokalender" name="gotokalender" action="total.php" method="GET">
+            <input id="calendar-inputField" name="startDate" type="hidden"/>
+        </form>
+
+        <p>Ende<input type="text" />
+
+            <i style="font-size:24px" class="fa">&#xf073;</i> 
+
+        <form id="gotokalender" name="gotokalender" action="total.php" method="GET">
+            <input id="calendar-inputField" name="startDate" type="hidden"/>
+        </form>
+
+        <p>Details <input type="text"/></p>
+
+        <p>Teilnehmer<input type="text" /></p>
+
+
+
+        <button type="button">Hinzufügen</button>
+    </body>
+</html>
