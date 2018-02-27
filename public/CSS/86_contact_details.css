@@ -1,0 +1,140 @@
+body{
+	height:100%;
+	width:100%;
+	margin:0;
+}
+/*left side*/
+#div_left_side{
+	float:left;
+	height:90%;
+	width:49%;
+}
+#tbl_left_side{
+	height:100%;
+	width:100%;
+}
+#div_images{
+	background-color:#ccc;
+	height:25%;
+	width:100%
+}
+#div_images table{
+	height:100%;
+	width:100%;
+}
+#i_image_arrow_left{
+	float:left;
+	width:35px;
+	height:35px;	
+}
+#i_image_arrow_left:hover{
+	background-color:#bbb
+}
+#i_image_arrow_right{
+	float:right;	
+	width:35px;
+	height:35px;
+}
+#i_image_arrow_right:hover{
+	background-color:#bbb;
+}
+	
+.i_image_arrow_down{
+	width:20px;
+	height:20px;
+}
+#img_image{
+	display:block;
+	margin:auto;
+	height:40%;
+}
+#h1_company_name{
+	width:100%;
+	background-color:#0064B0;
+	color:#fff;
+	
+}
+.contact_person_header{
+	width:100%;
+	background-color:#0064B0;
+	color:#fff;
+}
+.h2_contact_person_name{
+	display:inline;
+}
+.tbl_contact_person td{
+	border-top:black 1px solid;
+}
+#tbl_information_company{
+	border-collapse:collapse;
+}
+.tbl_contact_person{
+	border-collapse:collapse;
+	width:100%;
+}
+#div_contact_persons{
+	overflow-y:auto;
+	overflow-x:auto;
+	height:30%;
+	margin-top: 15px;
+}
+/*end left side*/
+/*right side*/
+#div_right_side{
+	float:right;
+	height:90%;
+	width:49%;
+	background-color:#dfdfdf;
+}
+.table_right_side{
+	width:100%;
+	height:100%;
+}
+.select_sort{
+	width:50%;
+	float:right;
+}
+.p_conversation_description{
+	float:right;
+	margin:0;
+	font-size:12px;
+}
+.h3_conversation_headline{
+	margin:0;
+	margin-top:10px;
+}
+.h6_conversation_date{
+	margin:0;
+}
+.div_conversation{
+	background-color:#bbb;
+	border:solid black 2px;
+	border-radius:10px;
+	padding:5px;
+	margin:5px;
+}
+.btn_conversation{
+	width:100%;
+	height:100%;
+	background-color:#0064B0;
+	border:0;
+	color:#fff;
+	font-size:17px;
+}
+.btn_conversation:hover{
+	color:#aaa;
+	
+}
+#tr_conversation_buttons{
+	height:10%;
+}
+#tr_conversation_buttons td{
+	width:50%;
+}
+#tr_conversation_select{
+	height:20px;
+}
+#tr_conversation_divs{
+	vertical-align:top;
+}
+/*end right side*/
