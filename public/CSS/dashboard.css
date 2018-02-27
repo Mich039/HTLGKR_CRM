@@ -2,7 +2,7 @@
     padding: 0;
     margin: 0;
     min-width: 500px;
-    max-height:100%;
+    max-height: 100%;
 }
 
 #top_nav {
@@ -63,23 +63,24 @@ aside img {
         transition: 0.5s;
         max-width: 25%;
         overflow-x: hidden;
-        align-items:center;
-        min-width:fit-content;
+        align-items: center;
+        min-width: fit-content;
     }
 
         #main aside a span {
             display: none;
-            align-self:center;
+            align-self: center;
         }
 
         #main aside a {
             display: flex;
             flex-direction: row;
         }
-        #content{
-            width:300%;
-            display:flex;
-        }
+
+#content {
+    width: 300%;
+    display: flex;
+}
 
 footer {
     background: darkgrey;
