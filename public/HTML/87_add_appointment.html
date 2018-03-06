@@ -1,0 +1,63 @@
+﻿<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Termin hinzufügen</title>
+        <link rel="stylesheet" type="text/css" href="../CSS/generalLayout.css">
+        <script type="text/javascript" src="../JSCRIPT/jquery-3.2.1.js"></script>
+        <script type="text/javascript" src="../JSCRIPT/knockout-3.4.2.js"></script>
+        <script type="text/javascript" src="../JSCRIPT/87_add_appointment.js"></script>
+    </head>
+    <body>
+        <!-- Wird neu implementiert, da der Code nicht gewartet werden kann.-->
+        <!--
+                <h2>Termin hinzufügen</h2>
+        <p>Titel<input type="text" /></p> 
+        <p>Beginn<input type="text" />
+
+            <i style="font-size:24px" class="fa">&#xf073;</i>
+
+        <form id="gotokalender" name="gotokalender" action="total.php" method="GET">
+            <input id="calendar-inputField" name="startDate" type="hidden"/>
+        </form>
+
+        <p>Ende<input type="text" />
+
+            <i style="font-size:24px" class="fa">&#xf073;</i> 
+
+        <form id="gotokalender" name="gotokalender" action="total.php" method="GET">
+            <input id="calendar-inputField" name="startDate" type="hidden"/>
+        </form>
+
+        <p>Details <input type="text"/></p>
+
+        <p>Teilnehmer<input type="text" /></p>
+
+
+
+        <button type="button">Hinzufügen</button>
+        -->
+        
+        <h1>Neuen Termin hinzufügen</h1>
+        <p>Titel</p>
+        <input id="add_appointment_title" type="text" />
+        <p>eingeladene Teilnehmer</p>
+        <input id="add_appointment_invitedMembers" type="text" />
+        <p>Beginn</p>
+        <input id="add_appointment_startDate" type="text" />
+        <p>Ende</p>
+        <input id="add_appointment_endDate" type="text" />
+        <p>Ort</p>
+        <input id="add_appointment_location" type="text" />
+        <p>Kurzbeschreibung</p>
+        <input id="add_appointment_description" type="text" />
+        <p>Details</p>
+        <textarea id="add_appointment_details" rows="10" cols="50"></textarea>
+        <br />
+        <button data-bind="click: addAppointmentClicked">Bestätigen</button>
+    </body>
+</html>
