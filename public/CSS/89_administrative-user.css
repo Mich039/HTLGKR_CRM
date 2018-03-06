@@ -8,26 +8,21 @@ and open the template in the editor.
     Author     : ozgeayar, jeigner
 */
 
-#DA1{
-    
-    border-style: solid;
-    border-width: thin;
-    width: 300px;
-    height: 100px;
-    overflow: scroll;
+th {
+    min-height: 20px;
+    border: 2px solid black;
 }
-#btn1{
-    width:100px;
-    height:20px;
-    background-color: window;
-    margin-right: 35px;
-       
+
+td {
+    border: 1px solid black;
+    padding: 5px 10px;
 }
-#btn2{
-     width:100px;
-    height:20px;
-    background-color: window
+
+tbody tr:hover {
+    background: lightblue;
 }
-#btn3{
-     background-color: window
+
+table {
+    border: 1px solid black;
+    border-collapse: collapse;
 }

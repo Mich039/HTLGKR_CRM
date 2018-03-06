@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <!--
 To change this license header, choose License Headers in Project Properties.
 To change this template file, choose Tools | Templates
@@ -9,56 +9,42 @@ and open the template in the editor.
         <title>89_Administrative_User</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" type="text/css" href="../CSS/administrative-user.css">
+        <link rel="stylesheet" type="text/css" href="../CSS/generalLayout.css">
+        <script type="text/javascript" src="../JSCRIPT/jquery-3.2.1.js"></script>
+        <script type="text/javascript" src="../JSCRIPT/knockout-3.4.2.js"></script>
+        <script type="text/javascript" src="../JSCRIPT/adm_user.js"></script>
     </head>
     <body>
-
-
         <div><h1>Diplomarbeiten</h1></div>
-
-
-
-        <form action="/action_page.php" >
-            <select name="diplomarbeiten" size="6">
-                <option value="Luchsticket">Luchsticket</option>
-                <option value="Sterilisationsoftware">Sterilisationssoftware</option>
-                <option value="Highway to Health">Highway to Health</option>
-                <option value="Robotino">Robotino</option>
-                <option value="Dicom-Drucker">Dicom-Drucker</option>
-                <option value="Get trained- E-learning Plattform">Get trained- E-learning Plattform</option>
-                <option value="Layout-generator">Layout generator</option>
-                <option value="Wanderapp">Wanderapp</option>
-            </select>
-            <br><br>
-
-        </form>
-
+        <table>
+            <thead>
+                <tr>
+                    <th>Diplomarbeit</th>
+                    <th>Auftaggeber</th>
+                    <th>Teammitglieder</th>
+                    <th>Betreuungslehrer</th>
+                </tr>
+            </thead>
+            <tbody data-bind="foreach:CollDiplArbeit">
+                <tr data-bind="attr:{title:desc}, event:{click:cellClicked}">
+                    <td data-bind="text:name"></td>
+                    <td data-bind="text:contractor"></td>
+                    <td data-bind="text:team"></td>
+                    <td data-bind="text:teacher"></td>
+                </tr>
+            </tbody>
+        </table>
         <br>
-        <button onclick="window.open('hinzufügen.html', '_self')" id="btn3">HINZUFÜGEN</button>
+        <button data-bind="click:addDiplArbeit" id="btn3">HINZUFÜGEN</button>
         <br>
         <br>
-        <p><h3>Luchsticket</h3>  <p>Betreuungslehrer:        <input type="text" id="betreung" name="betlehrer"></p>
-
-        <p>Teammitglieder:  <input type="text" id="teammembers" name="members"></p>    
-        <p>Auftraggeber:   <input type="text" id="auftraggeber" name="auftragsgeber"></p>   
-        <p>kurze Beschreibung: <input type="text" id="beschreibung" name="beschreibung"></p>     
-
-
-
-
-        <button onclick="window.open('bestätigen.html', '_self')" id="btn1" >BESTÄTIGEN
-            <button onclick="window.open('bearbeiten.html', '_self')" id="btn2">BEARBEITEN</button>
-        </button>
-
-        </input>
-
-
-
-
-
-
-
-
-
+        <div data-bind="with:curr">
+            <p>Name:<input type="text" id="DiplArbName" name="DiplArbName" data-bind="value:name"></p>
+            <p>Betreuungslehrer:<input type="text" id="betreung" name="betlehrer" data-bind="value:teacher"></p>
+            <p>Teammitglieder:<input type="text" id="teammembers" name="members" data-bind="value:team"></p>
+            <p>Auftraggeber:<input type="text" id="auftraggeber" name="auftragsgeber" data-bind="value:contractor"></p>
+            <p>kurze Beschreibung: <input type="text" id="beschreibung" name="beschreibung" data-bind="value:desc"></p>
+        </div>
+        <button data-bind="click:commitChanges" id="btn1">Auf Datenbank schreiben</button>
     </body>
 </html>
