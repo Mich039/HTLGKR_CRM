@@ -14,8 +14,9 @@ $(document).ready(function () {
     function AddAppointmentModel() {
 
         function addAppointmentClicked() {
-            var appointment = appointment();
-            var jsonString = ko.toJSON();
+            alert($("#add_appointment_title").text);
+            //var appointment = appointment();
+            //var jsonString = ko.toJSON();
         }
     }
 
