@@ -27,6 +27,3 @@ form {
     display: flex;
     flex-direction: column;
 }
-label,input,button{
-    margin:5px;
-}
