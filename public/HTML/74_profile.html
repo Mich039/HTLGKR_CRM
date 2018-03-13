@@ -3,33 +3,34 @@
     <title>Profil</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="../CSS/profil_css.css" />
+    <link rel="stylesheet" type="text/css" href="../CSS/generalLayout.css">
+    <script type="text/javascript" src="../JSCRIPT/jquery-3.2.1.js"></script>
+    <script type="text/javascript" src="../JSCRIPT/knockout-3.4.2.js"></script>
+    <script type="text/javascript" src="../JSCRIPT/74_profile.js"></script>
 </head>
 <body>
     <img id="img_profile_picture" src="https://www.menon.no/wp-content/uploads/person-placeholder.jpg" alt="no image"</img>
     <div id="div_profile_data">
-        <h1 id="h1_name">
-            Firstname Lastname
-            <i id="i_edit_data" class="fa fa-wrench"></i>
+        <h1 id="h1_name" data-bind="text: myProfile.fullName">
         </h1>
-        <h2 id="h2_position_company">Rolle bei der Firma ABC</h2>
+        <h2 id="h2_position_company" data-bind="text: myProfile.role"></h2>
         <h3 id="h3_contact_information" class="field_group">Kontaktinformationen</h3>
         <div class="div_data_field">
             <h4 id="h4_adress" class="data_field_desc">Adresse:</h4>
-            <h4 id="h4_adress_data" class="data_field"> Street 10, 4567 sdfghjkjhgfdD</h4>
+            <h4 id="h4_adress_data" class="data_field" data-bind="text: myProfile.address"></h4>
         </div>
         <div class="div_data_field">
             <h4 id="h4_phone_number" class="data_field_desc">Telefonnummer:</h4>
-            <h4 id="h4_phone_number_data" class="data_field">+43 435 3455 454</h4>
+            <h4 id="h4_phone_number_data" class="data_field" data-bind="text: myProfile.phoneNumber"></h4>
         </div>
         <div class="div_data_field">
             <h4 id="h4_email_adress" class="data_field_desc">Email-Adresse:</h4>
-            <h4 id="h4_email_adress_data" class="data_field">sdf2.sdaf@sdfads.at</h4>
+            <h4 id="h4_email_adress_data" class="data_field" data-bind="text: myProfile.emailAddress"></h4>
         </div>
         <div class="div_data_field">
             <h4 id="h4_website" class="data_field_desc">Website:</h4>
-            <h4 id="h4_website_data" class="data_field">www.asdfpduifhwij.asd</h4>
+            <h4 id="h4_website_data" class="data_field" data-bind="text: myProfile.website"></h4>
         </div>
     </div>
-
 </body>
 </html>

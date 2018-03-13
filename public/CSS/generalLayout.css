@@ -146,3 +146,58 @@ table {
         background: -webkit-gradient(linear, left top, left bottom, from(#f2f2f2), to(#f0f0f0));
         background: -moz-linear-gradient(top, #f2f2f2, #f0f0f0);
     }
+
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #666;
+    font-size: 22px;
+    text-shadow: 1px 1px 0px #fff;
+    margin-bottom: 8px;
+    margin-top: 8px;
+}
+h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #666;
+    font-size: 20px;
+    text-shadow: 1px 1px 0px #fff;
+    margin-bottom: 8px;
+    margin-top: 8px;
+}
+h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #666;
+    font-size: 18px;
+    text-shadow: 1px 1px 0px #fff;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+h4 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #666;
+    font-size: 16px;
+    text-shadow: 1px 1px 0px #fff;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #666;
+    font-size: 12px;
+    text-shadow: 1px 1px 0px #fff;
+}
+
+input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 3px solid #ccc;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none;
+}
+
+    input[type=text]:focus {
+        border: 3px solid #555;
+    }
