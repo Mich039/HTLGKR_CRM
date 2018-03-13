@@ -1,10 +1,13 @@
 <html>
 <head>
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<script src="../JSCRIPT/knockout-3.4.2.js"></script>
+	<script src="../JSCRIPT/jquery-3.2.1.js"></script>
 	<link rel="stylesheet" type="text/css" href="../CSS/86_contact_details.css" />
+	<script src="../JSCRIPT/86_contact_details.js"></script>
 </head>
 	<body>
-		<h1 id="h1_company_name">Firma aBSEgpaidhg</h1>
+		<h1 id="h1_company_name" data-bind="text: company_contact.company_name"></h1>
 		<div id="div_left_side">
 			
 			<div id="div_images">
@@ -29,28 +32,28 @@
 				<table id="tbl_information_company">
 					<tr>
 						<td>Adresse:</td>
-						<td>Straße 10, 3252 Oradsf</td>
+						<td data-bind="text: company_contact.adress"></td>
 					</tr>				
 					<tr>
 						<td>Leitung:</td>
-						<td>Tim Streun</td>
+						<td data-bind="text:company_contact.management"></td>
 					</tr>
 					<tr>
 						<td>Beschreibung:</td>
-						<td>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent tempus egestas ipsum quis dignissim. Vestibulum non magna nisl. Suspendisse pulvinar, eros vel bibendum ultricies, augue nisl aliquam odio, et ornare tellus massa in felis. Cras sagittis tellus ligula, id vehicula nisl condimentum et. Integer semper placerat laoreet. </td>
+						<td data-bind="text: company_contact.description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent tempus egestas ipsum quis dignissim. Vestibulum non magna nisl. Suspendisse pulvinar, eros vel bibendum ultricies, augue nisl aliquam odio, et ornare tellus massa in felis. Cras sagittis tellus ligula, id vehicula nisl condimentum et. Integer semper placerat laoreet. </td>
 					</tr>
 					<tr>
 						<td>Bereiche:</td>
-						<td>Informatik, Medizin-Informatik, Organisation</td>
+						<td data-bind="text: company_contact.domain">Informatik, Medizin-Informatik, Organisation</td>
 					</tr>
 					<tr>
 						<td>Verbindung</td>
-						<td>Diplomarbeit</td>
+						<td data-bind="text: company_contact.connection">Diplomarbeit</td>
 					</tr>
 				</table>
 			</div>
 			<div id="div_contact_persons">
-				<div id="div_contact_person" class="div_contact_person">
+				<div id="div_contact_person" class="div_contact_person" data-bind="foreach: company_contact.contact_persons">
 					<div id="div_contact_person_header" class="contact_person_header">
 						<img class="i_image_arrow_down" src="../res/icon_arrow_down.png"></img>
 						<h2 class="h2_contact_person_name">Max Mustermann</h2>
