@@ -43,8 +43,8 @@ body{
 	width:20px;
 	height:20px;
 }
-#img_image{
-	display:block;
+.img_image{
+	display:none;
 	margin:auto;
 	height:40%;
 }
