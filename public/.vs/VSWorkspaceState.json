@@ -1,7 +1,11 @@
 {
   "ExpandedNodes": [
     "",
-    "\\HTML"
+    "\\CSS",
+    "\\HTML",
+    "\\JSCRIPT",
+    "\\res"
   ],
+  "SelectedNode": "\\HTML\\89_administrative-user.html",
   "PreviewInSolutionExplorer": false
 }

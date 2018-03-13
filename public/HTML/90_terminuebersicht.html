@@ -7,24 +7,38 @@
     <link rel="stylesheet" type="text/css" href="../CSS/90_terminuebersicht.css">
     <link rel="stylesheet" type="text/css" href="../CSS/generalLayout.css">
     <script type="text/javascript" src="../JSCRIPT/jquery-3.2.1.js"></script>
+    <script type="text/javascript" src="../JSCRIPT/knockout-3.4.2.js"></script>
     <script type="text/javascript" src="../JSCRIPT/90_appointment_overview.js"></script>
 </head>
 <body>
     <h1>Terminübersicht</h1>
     <table>
-        <tr>
-            <th>Termin ID</th>
-            <th>eingeladene Teilnehmer</th>
-            <th>Zusagen</th>
-            <th>Absagen</th>
-            <th>Beginn</th>
-            <th>Ende</th>
-            <th>Ort</th>
-            <th>Kurzbeschreibung</th>
-        </tr>
-        <tr>
-            <td></td>
-        </tr>
+        <thead>
+            <tr>
+                <th>Termin ID</th>
+                <th>Titel</th>
+                <th>eingeladene Teilnehmer</th>
+                <th>Zusagen</th>
+                <th>Absagen</th>
+                <th>Beginn</th>
+                <th>Ende</th>
+                <th>Ort</th>
+                <th>Kurzbeschreibung</th>
+            </tr>
+        </thead>
+        <tbody data-bind="foreach: appointments">
+            <tr>
+                <td data-bind="text: appointmentID"></td>
+                <td data-bind="text: appointmentName"></td>
+                <td data-bind="text: invitedMembers"></td>
+                <td data-bind="text: acceptedMembersCount"></td>
+                <td data-bind="text: declinedMembersCount"></td>
+                <td data-bind="text: startDate"></td>
+                <td data-bind="text: endDate"></td>
+                <td data-bind="text: location"></td>
+                <td data-bind="text: description"></td>
+            </tr>
+        </tbody>
     </table>
     <button id="btn_details">Details</button>
     <button id="btn_modify_appointment">Termin bearbeiten</button>
